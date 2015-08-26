@@ -10,6 +10,7 @@ class OperatingSystems implements DataProviderInterface
     public function get()
     {
         $operatingSystems = [
+            'android'            =>  'Android',
             'windows nt 6.3'     =>  'Windows 8.1',
             'windows nt 6.2'     =>  'Windows 8',
             'windows nt 6.1'     =>  'Windows 7',
@@ -33,7 +34,6 @@ class OperatingSystems implements DataProviderInterface
             'iphone'             =>  'iPhone',
             'ipod'               =>  'iPod',
             'ipad'               =>  'iPad',
-            'android'            =>  'Android',
             'blackberry'         =>  'BlackBerry',
             'webos'              =>  'Mobile',
             'windows nt'         =>  'Microsoft Windows',

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Check hier wat jouw browser over je verteld op internet! Wat is je IP en wat zegt je useragent? WatIsMijnIp toont alle openbare informatie die jij deelt vanaf je eigen computer!">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
+    <title>Mijn computer info? Jouw computer info!</title>
+
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="/assets/js/modernizr.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">HOME</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<!-- *****************************************************************************************************************
+	 HEADERWRAP
+	 ***************************************************************************************************************** -->
+	<div id="headerwrap" class="compactheader">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 compact whitetext">
+					<h1>Mijn Computer Info</h1>
+                    <p class="blacktext">
+					Vind hier alle informatie die je zoekt over je eigen computer of laptop. Wij lezen je <strong>UserAgent</strong> uit en bekijken je IP adres voor een plaatsbepaling.
+					</p>
+                    <h2>Ons beleid</h2>
+                    <p class="blacktext">
+                        Wij slaan uw gegevens niet op. Wij tonen alleen de informatie die elke andere website kan inzien en (eventueel) kan opslaan.
+                    </p>
+				</div>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /headerwrap -->
+
+
+
+
+    {% include 'StefMijnComputerInfoBundle:Default:container.html.twig' %}
+    {% include 'StefMijnComputerInfoBundle:Default:footer.html.twig' %}
+    {% include 'StefMijnComputerInfoBundle:Default:js.html.twig' %}
+
+
+
+  </body>
+</html>

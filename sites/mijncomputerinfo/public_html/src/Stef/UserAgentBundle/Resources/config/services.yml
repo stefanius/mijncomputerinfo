@@ -1,0 +1,4 @@
+services:
+#    stef_user_agent.example:
+#        class: Stef\UserAgentBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

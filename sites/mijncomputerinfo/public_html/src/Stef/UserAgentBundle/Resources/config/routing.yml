@@ -1,0 +1,3 @@
+stef_user_agent_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: StefUserAgentBundle:Default:index }

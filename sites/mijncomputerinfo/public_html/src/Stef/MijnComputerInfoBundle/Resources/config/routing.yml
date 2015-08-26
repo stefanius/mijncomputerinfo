@@ -1,0 +1,3 @@
+stef_mijn_computer_info_homepage:
+    path:     /
+    defaults: { _controller: StefMijnComputerInfoBundle:Default:index }

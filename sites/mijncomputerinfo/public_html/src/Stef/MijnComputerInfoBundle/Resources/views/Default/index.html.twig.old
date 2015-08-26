@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="/js/jquery.min.js"></script>
+
+</head>
+
+
+    <body class="home">
+<script>
+
+    function getBrowserLanguage() {
+        return navigator.language || navigator.userLanguage;
+    }
+
+    function getScreenInfo(){
+        return window.screen;
+    }
+
+    function getScreenColorDept(){
+        return getScreenInfo().colorDepth;
+    }
+
+    function getScreenAvailResolution(){
+        return getScreenInfo().availWidth + ' X ' + getScreenInfo().availHeight;
+    }
+
+    function getScreenResolution(){
+        return getScreenInfo().width + ' X ' + getScreenInfo().height;
+    }
+
+    function getWindowSize(){
+        var d = document, root= d.documentElement, body = d.body;
+        var wid = window.innerWidth || root.clientWidth || body.clientWidth;
+        var hi= window.innerHeight || root.clientHeight || body.clientHeight;
+
+        return wid + ' X ' + hi;
+    }
+
+    function getHistoryLength() {
+        return  window.history.length;
+    }
+
+    alert ("The language is: " + navigator);
+    console.log(navigator);
+</script>
+
+    </body>
+
+</html>

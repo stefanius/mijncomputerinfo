@@ -1,0 +1,18 @@
+.whitetext {
+    text-decoration-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.blacktext {
+    text-decoration-color: #000000;
+    color: #000000;
+}
+
+.compact, .compact p, .compact h1, .compact h2, .compact div {
+    margin-bottom: 0.1em;
+    margin-bottom: 0.1em !important;
+}
+
+.compactheader {
+    min-height: 1em !important;
+}

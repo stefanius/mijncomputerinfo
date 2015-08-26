@@ -1,0 +1,3 @@
+stef_mijn_computer_info:
+    resource: "@StefMijnComputerInfoBundle/Resources/config/routing.yml"
+    prefix:   /

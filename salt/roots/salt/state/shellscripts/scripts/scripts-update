@@ -1,0 +1,15 @@
+#!/bin/bash
+source base
+
+mkdir ~/.shellscripts.tmp/
+mkdir ~/.shellscripts.tmp/configs/
+
+mv $CONFIGFOLDER ~/.shellscripts.tmp/configs
+
+cd $ROOTFOLDER
+git fetch origin
+git reset --hard origin/master
+git checkout
+git pull
+chmod 775 $ROOTFOLDER -R
+mv ~/.shellscripts.tmp/configs $CONFIGFOLDER

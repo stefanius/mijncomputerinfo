@@ -1,0 +1,46 @@
+<div class="container centered">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-lg-12">
+                <h2>Jouw IP</h2>
+                <p>{{ ip }}</p>
+                {% include 'StefSimpleCmsBundle:GoogleAdsense:728x90.html.twig' with {'pubid': 'ca-pub-1143505562670221', 'slotid': '4350506819'} %}
+            </div>
+
+            <div class="col-lg-12">
+                <h2>UserAgent</h2>
+                <p>{{ user_agent }}</p>
+
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        {% for key, value in browserdata %}
+                            <tr>
+                                <td>{{ key }}</td>
+                                <td>{{ value }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                {% include 'StefSimpleCmsBundle:GoogleAdsense:728x90.html.twig' with {'pubid': 'ca-pub-1143505562670221', 'slotid': '4350506819'} %}
+            </div>
+
+
+            <div class="col-lg-12">
+                <h2>Informatie uit Javascript</h2>
+
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        {% for key, value in js_data %}
+                            <tr class="{{ key }}">
+                                <td class="caption">{{ value.caption }}</td>
+                                <td class="value">{{ value.value }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                {% include 'StefSimpleCmsBundle:GoogleAdsense:728x90.html.twig' with {'pubid': 'ca-pub-1143505562670221', 'slotid': '4350506819'} %}
+            </div>
+        </div>
+
+    </div>
+</div>
